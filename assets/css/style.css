@@ -1,0 +1,199 @@
+:root{
+    --mainColor: #461e00;
+    --secColor:#bfbfbf;
+}
+@font-face{
+    src:url(../../fonts/TheNautigal-Bold.ttf);
+    font-family:Nautigal;
+    }
+    
+.text-mainColor{
+    color:var(--mainColor);
+}
+.bg-blur{
+    background: rgba(255, 255, 255,0.4); 
+}
+.bg-gray{
+    background-color: #f2f2f2;
+}
+.bg-brown{
+    background-color: #D2B48C;
+}
+.butn{
+    display: block;
+    width:fit-content;
+    background-color:#D2B48C;
+    opacity: 0.8;
+    backdrop-filter: blur(8px);
+    border:1px solid #461e00;
+    color: #461e00;
+    padding: 10px 17px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(31 45 65 / 20%);
+    transition: all 1s;
+}
+.butn:hover{
+    background-color: #461e00;
+    opacity: 1;
+    color: #dbd3bd;
+
+}
+.home nav .logo{
+    font-family: Nautigal;
+    color:  #B8860B;
+}
+.home nav .logo:hover{
+    color:  #B8860B;
+}
+/* start home */
+.header{
+    background-image: url(../img/header/naslovna.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+.header .overlay{
+    background-color: rgba(0,0,0,.09);
+    height: 100%;
+} 
+
+.header .overlay .container h1{
+    color: #461e00;
+    font-size: 3.3rem;
+    line-height: 60px;
+    width:35%;
+    font-weight: normal;
+}
+.header .overlay .container p{
+    color: #dbd3bd;
+    line-height: 1.4;
+}
+/* end home */
+
+/* start about */
+.about .container .about-info h5{
+    font-family: Nautigal;
+    color: #B8860B;
+}
+.title2{
+    color: #f1f1f1;
+    font-family: Nautigal;
+}
+.title{
+    font-family: Nautigal;
+    color: #B8860B;
+}
+.about .container .firstPart{
+    border-bottom: 1px solid #c5ccd6;
+    padding-bottom: 20px;  
+}
+.about .secondPart .about-info .position{
+    left:120px;
+    top:-30px;
+}
+.imgScale img{
+    transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+}
+.imgScale:hover img{
+    transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+/* end about */
+
+/* start portfolio */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color:#B8860B;
+    background-color: transparent;
+}
+.nav-pills .nav-link{
+    border:0;
+    color:#000;
+    font-weight: 700;
+}
+.portfolio .tap-item{
+    border: 0 solid rgba(0,0,0,.125);
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(31 45 65 / 15%);
+}
+/* end portfolio */
+
+/* start contact */
+.contact{
+    
+}
+.videoProperty{
+    margin-bottom: 0px;
+    position: relative;
+    height: 550px;
+}
+.videoProperty:before{
+    content: '';
+    background-color: rgba(0,0,0,.3);
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.videoProperty video{
+    height: 550px;
+    width: 100%;
+    object-fit: fill;
+    z-index: -1;
+    padding-bottom: 0px;
+}
+.contact .contact-bg{
+    position: relative;
+}
+.contact .contact-bg .img-content{
+    width: 100%;
+    object-fit: fill;  
+}
+.contact .contact-info{
+    position: absolute;
+    top:0;
+    bottom:0;
+    color: #dbd3bd;
+    font-size: 17px;
+    width: 50%;
+}
+.contact .contact-info .input-group button{
+    color:#f2f2f2;
+    background-color: rgba(255, 255, 255,0.4); 
+}
+.contact .contact-info .input-group button:hover{
+    background-color:  #B8860B;
+}
+/* end contact */
+
+/* start footer */
+
+.footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.fontNaut{
+    font-family: Nautigal;
+    font-size: 20px;
+}
+.fsize-small{
+    font-size: 13px;
+}
+.footer .socialMedia li:hover a{
+    color: #B8860B;
+    transition: 1s;
+
+}
+.footerHeader{
+    font-family: Nautigal;
+    font-size: 35px;
+    color: #B8860B;
+
+}
+/* end footer */
